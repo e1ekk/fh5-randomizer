@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Forza Horizon 5 Race Route Randomizer</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+</head>
+<body onload="run()">
+    <p>
+        <table style="margin-left: auto; margin-right: auto;"><tr>
+            <td><img src="logo.png" alt="Logo" style="height: 85px;"></td>
+            <td style="vertical-align: middle; font-size: larger; color: white;">Forza Horizon 5<br>Race Route<br>Randomizer</td>
+        </tr></table>
+    </p>
+    <div style="width: 100%; overflow-x: auto;">
+        <table style="white-space: nowrap;">
+            <tr><td>Mexico</td><td style="padding-left: 10px;">Hot Wheels</td><td style="padding-left: 10px;">Rally Adventure</td></tr>
+            <tr style="user-select: none;">
+                <td style="border-right: 2px solid #d6d6d6; padding-right: 10px;">
+                    <label for="roadRaces"><input type="checkbox" checked id="roadRaces">Road Races (35)</label>
+                    <label for="streetRaces"><input type="checkbox" id="streetRaces">Street Races (21)</label>
+                    <label for="dirtRaces"><input type="checkbox" id="dirtRaces">Dirt Races (20)</label>
+                    <label for="crossCountryRaces"><input type="checkbox" id="crossCountryRaces">Cross Country Races (20)</label>
+                    <label for="dragRaces"><input type="checkbox" id="dragRaces">Drag Races (3)</label>
+                    <label for="midnightBattles"><input type="checkbox" id="midnightBattles">Midnight Battles (4)</label>
+                </td>
+                <td style="padding-left: 10px; border-right: 2px solid #d6d6d6; padding-right: 10px;">
+                    <label for="speedRaces"><input type="checkbox" id="speedRaces">Speed Races (10)</label>
+                    <label for="hazardRaces"><input type="checkbox" id="hazardRaces">Hazard Races (8)</label>
+                </td>
+                <td style="padding-left: 10px;">
+                    <label for="apexPredators"><input type="checkbox" id="apexPredators">Apex Predators (9)</label>
+                    <label for="horizonRaptors"><input type="checkbox" id="horizonRaptors">Horizon Raptors (10)</label>
+                    <label for="gritReapers"><input type="checkbox" id="gritReapers">Grit Reapers (9)</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p style="text-align: right; height: 0; border-bottom: 0;"><span id="deselectall" onclick="deselectall()">Deselect All</span></p>
+    <div id="details">
+        <img alt="icon" style="height: 100px;" id="icon">
+        <h1 id="result"></h1>
+        <hr>
+        <p>
+            Type: <span id="raceType"></span><br><br><span id="winter"></span>
+        </p>
+    </div>
+    <div id="imagediv">
+        <div id="image2"></div>
+        <div id="image"></div>
+    </div>
+    <div style="text-align: center; clear: both; margin-bottom: 30px;"><br style="user-select: none;"><button id="run" onclick="run()">Get a random race route</button></div>
+    <footer style="text-align: center; font-size: smaller;">If you encounter any issues or mistakes you can <a href="https://www.reddit.com/message/compose/?to=Przemek47" target="_blank">message me on Reddit</a></footer>
+</body>
+</html>
