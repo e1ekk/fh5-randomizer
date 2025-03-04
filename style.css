@@ -109,7 +109,7 @@ input[type="checkbox"]{
     border-radius: 30px;
     height: 300px;
     width: 100%;
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
