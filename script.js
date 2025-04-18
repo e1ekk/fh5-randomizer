@@ -312,3 +312,21 @@ function deselectall(){
     horizonRaptors.checked = false;
     gritReapers.checked = false;
 }
+
+var moreopen = Boolean(false);
+function more(){
+    var morelist = document.getElementById("morelist");
+    var moreicon = document.getElementById("moreicon");
+    if(moreopen == false){
+        morelist.hidden = false;
+        moreopen = true;
+        moreicon.classList.remove("fa-solid", "fa-chevron-down");
+        moreicon.classList.add("fa-solid", "fa-chevron-up");
+    }
+    else{
+        morelist.hidden = true;
+        moreopen = false;
+        moreicon.classList.remove("fa-solid", "fa-chevron-up");
+        moreicon.classList.add("fa-solid", "fa-chevron-down");
+    }
+}
