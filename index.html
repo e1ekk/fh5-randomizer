@@ -1,57 +1,178 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Forza Horizon 5 Race Route Randomizer</title>
+    <title>Elek's Forza Horizon Art Showcase</title>
     <link rel="icon" type="image/x-icon" href="icon.ico">
+    <script src="https://kit.fontawesome.com/108c7db30d.js" crossorigin="anonymous"></script>
 </head>
-<body onload="run()">
-    <p>
-        <table style="margin-left: auto; margin-right: auto;"><tr>
-            <td><img src="logo.png" alt="Logo" style="height: 85px;"></td>
-            <td style="vertical-align: middle; font-size: larger; color: white;">Forza Horizon 5<br>Race Route<br>Randomizer</td>
-        </tr></table>
+<body>
+    <p style="text-align: center;"><img src="images/logo.png" id="logo" style="height: 150px; position: fixed; margin-left: -75px;"></p>
+    <hr style="height: 150px;">
+
+    <p id="flags">
+        <input id="enjson" type="image" src="images/en.png" height="25px" onclick="seten()" title="Change language to English"></input> <input id="pljson" type="image" src="images/pl.png" height="25px" onclick="setpl()" title="Change language to Polish"></input>
     </p>
-    <div style="width: 100%; overflow-x: auto;">
-        <table style="white-space: nowrap;">
-            <tr><td>Mexico</td><td style="padding-left: 10px;">Hot Wheels</td><td style="padding-left: 10px;">Rally Adventure</td></tr>
-            <tr style="user-select: none;">
-                <td style="border-right: 2px solid #d6d6d6; padding-right: 10px;">
-                    <label for="roadRaces"><input type="checkbox" checked id="roadRaces">Road Races (35)</label>
-                    <label for="streetRaces"><input type="checkbox" id="streetRaces">Street Races (21)</label>
-                    <label for="dirtRaces"><input type="checkbox" id="dirtRaces">Dirt Races (20)</label>
-                    <label for="crossCountryRaces"><input type="checkbox" id="crossCountryRaces">Cross Country Races (20)</label>
-                    <label for="dragRaces"><input type="checkbox" id="dragRaces">Drag Races (3)</label>
-                    <label for="midnightBattles"><input type="checkbox" id="midnightBattles">Midnight Battles (4)</label>
-                </td>
-                <td style="padding-left: 10px; border-right: 2px solid #d6d6d6; padding-right: 10px;">
-                    <label for="speedRaces"><input type="checkbox" id="speedRaces">Speed Races (10)</label>
-                    <label for="hazardRaces"><input type="checkbox" id="hazardRaces">Hazard Races (8)</label>
-                </td>
-                <td style="padding-left: 10px;">
-                    <label for="apexPredators"><input type="checkbox" id="apexPredators">Apex Predators (9)</label>
-                    <label for="horizonRaptors"><input type="checkbox" id="horizonRaptors">Horizon Raptors (10)</label>
-                    <label for="gritReapers"><input type="checkbox" id="gritReapers">Grit Reapers (9)</label>
-                </td>
-            </tr>
-        </table>
+
+    <p id="more" onclick="more()"><span id="morejson" style="color: white;">My other projects</span> <i class="fa-solid fa-chevron-down" style="color: white;" id="moreicon"></i></p>
+    <p id="morelist" hidden>
+        <a href="https://e1ekk.github.io/fh5-randomizer/">Forza Horizon 5 Race Route Randomizer</a>
+    </p>
+
+    <h1><span id="featured"><span id="featuredjson">Featured</span> (14.04.2025)</span></h1>
+    <div id="bg" style="background-image: url('images/porsche\ bg.png');">
+        <h2><span id="featuredname">#13 - 2023 Porsche 911 GT3 R, 2017 Porsche #92 Porsche GT Team 911 RSR</span></h2>
+        <p style="text-align: center;"><a href="images/porsche.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/porsche.png" id="featuredimage">
+        </a></p>
+        <p id="descfeatured">If you're looking for a deeper meaning here... I regret to inform you that there's none. I just thought these backgrounds look cool 😎.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
     </div>
-    <p style="text-align: right; height: 0; border-bottom: 0;"><span id="deselectall" onclick="deselectall()">Deselect All</span></p>
-    <div id="details">
-        <img alt="icon" style="height: 100px;" id="icon">
-        <h1 id="result"></h1>
-        <hr>
-        <p>
-            Type: <span id="raceType"></span><br><br><span id="winter"></span>
-        </p>
+
+    <h1 id="allartjson">All art</h1>
+    <div id="bg" style="background-image: url('images/charger\ bg.png');">
+        <h2>#1 - 2022 Fast and Furious Dodge Charger SRT Hellcat Redeye Widebody 'Fast X'<br><span id="date">(2.04.2024)</span></h2>
+        <p><a href="images/charger.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/charger.png" id="imgblur">
+            <img src="images/charger.png">
+        </a></p>
+        <p id="desc1json">My very first creation which started the whole thing. The inspiration came from <a href="https://www.reddit.com/r/ForzaHorizon/comments/1attra8/d_b_s/" target="_blank">this Reddit post</a>. Off to a good start. By the way, this is my favorite car.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
     </div>
-    <div id="imagediv">
-        <div id="image2"></div>
-        <div id="image"></div>
+    <hr>
+    <div id="bg" style="background-image: url('images/f40\ competizione\ bg.png');">
+        <h2>#2 - 1989 Ferrari F40 Competizione<br><span id="date">(7.04.2024)</span></h2>
+        <p><a href="images/f40 competizione.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/f40 competizione.png" id="imgblur">
+            <img src="images/f40 competizione.png">
+        </a></p>
+        <p id="desc2json">The engine bay in this car is just magnificent.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
     </div>
-    <div style="text-align: center; clear: both; margin-bottom: 30px;"><br style="user-select: none;"><button id="run" onclick="run()">Get a random race route</button></div>
-    <footer style="text-align: center; font-size: smaller;">If you encounter any issues or mistakes you can <a href="https://www.reddit.com/message/compose/?to=Przemek47" target="_blank">message me on Reddit</a></footer>
+    <hr>
+    <div id="bg" style="background-image: url('images/agera\ rs\ bg.png');">
+        <h2>#3 - 2017 Koenigsegg Agera RS<br><span id="date">(17.06.2024)</span></h2>
+        <p><a href="images/agera rs.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/agera rs.png" id="imgblur">
+            <img src="images/agera rs.png">
+        </a></p>
+        <p id="desc3json">Looks a bit like a postcard. All it's missing is a huge "Greetings from Mexico".</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
+    </div>
+    <hr>
+    <div id="bg" style="background-image: url('images/challenger\ bg.png');">
+        <h2>#4 - 2018 Dodge Challenger SRT Demon<br><span id="date">(22.08.2024)</span></h2>
+        <p><a href="images/challenger.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/challenger.png" id="imgblur">
+            <img src="images/challenger.png">
+        </a></p>
+        <p id="desc4json">A proper drag racing car.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
+    </div>
+    <hr>
+    <div id="bg" style="background-image: url('images/charger\ rt\ bg.png');">
+        <h2>#5 - 1969 Dodge Charger R/T<br><span id="date">(4.10.2024)</span></h2>
+        <p><a href="images/charger rt.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/charger rt.png" id="imgblur">
+            <img src="images/charger rt.png">
+        </a></p>
+        <p id="desc5json">Tried to achieve a vintage photo look. Got inspired by <a href="https://www.reddit.com/r/ForzaHorizon/comments/1fvyhpw/classic/" target="_blank">this Reddit post</a>.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
+    </div>
+    <hr>
+    <div id="bg" style="background-image: url('images/magnum\ bg.png');">
+        <h2>#6 - 2008 Dodge Magnum SRT-8<br><span id="date">(6.10.2024)</span></h2>
+        <p><a href="images/magnum.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/magnum.png" id="imgblur">
+            <img src="images/magnum.png">
+        </a></p>
+        <p id="desc6json">It's a shame they stopped the production of these. Imagine a Magnum Hellcat...</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
+    </div>
+    <hr>
+    <div id="bg" style="background-image: url('images/n\ vision\ 74\ bg.png');">
+        <h2>#7 - 2022 Hyundai N Vision 74<br><span id="date">(6.10.2024)</span></h2>
+        <p><a href="images/n vision 74.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/n vision 74.png" id="imgblur">
+            <img src="images/n vision 74.png">
+        </a></p>
+        <p id="desc7json">The map is <a href="https://www.youtube.com/watch?v=OJbvLW8ICUo" target="_blank">Hoshido City</a>. There's also a refreshed version which released 4 days later called <a href="https://www.youtube.com/watch?v=9iz3FcQ1zyE" target="_blank">Hoshido City Redux</a>. Should've waited a week.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
+    </div>
+    <hr>
+    <div id="bg" style="background-image: url('images/viper\ bg.png');">
+        <h2>#8 - 2016 Dodge Viper ACR<br><span id="date">(10.10.2024)</span></h2>
+        <p><a href="images/viper.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/viper.png" id="imgblur">
+            <img src="images/viper.png">
+        </a></p>
+        <p id="desc8json">Made for Halloween. A bit early but I was impatient.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
+    </div>
+    <hr>
+    <div id="bg" style="background-image: url('images/911\ gt3\ rs\ 2023\ bg.png');">
+        <h2>#9 - 2023 Porsche 911 GT3 RS<br><span id="date">(7.11.2024)</span></h2>
+        <p><a href="images/911 gt3 rs 2023.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/911 gt3 rs 2023.png" id="imgblur">
+            <img src="images/911 gt3 rs 2023.png">
+        </a></p>
+        <p id="desc9json">Took the photos with a random guy driving around the race track. A real MVP.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
+    </div>
+    <hr>
+    <div id="bg" style="background-image: url('images/dakar\ bg.png');">
+        <h2>#10 - 2023 Porsche 911 Rallye<br><span id="date">(15.11.2024)</span></h2>
+        <p><a href="images/dakar.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/dakar.png" id="imgblur">
+            <img src="images/dakar.png">
+        </a></p>
+        <p id="desc10json">The Porsche 911 Dakar. Amazing car.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
+    </div>
+    <hr>
+    <div id="bg" style="background-image: url('images/winter\ bg.png');">
+        <h2>#11 - 2017 Aston Martin DB11, 1982 Lancia 037 Stradale, 2018 Lamborghini Huracán Performante, 1987 Ferrari F40<br><span id="date">(09.12.2024)</span></h2>
+        <p><a href="images/winter.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/winter.png" id="imgblur">
+            <img src="images/winter.png">
+        </a></p>
+        <p id="desc11json">Various winter and Christmas themed places from around the map.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
+    </div>
+    <hr>
+    <div id="bg" style="background-image: url('images/winterfh4\ bg.png');">
+        <h2>#12 - 1991 GMC Syclone, 2016 Hoonigan Gymkhana 9 Ford Focus RS RX, 2058 Quadra Turbo-R V-Tech<br><span id="date">(13.12.2024)</span></h2>
+        <p><a href="images/winterfh4.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/winterfh4.png" id="imgblur">
+            <img src="images/winterfh4.png">
+        </a></p>
+        <p id="desc12json">Winter in Forza Horizon 4 👌.</p>
+        <p style="text-align: right;"><img src="images/fh4.png" style="height: 50px;"></p>
+    </div>
+    <hr>
+    <div id="bg" style="background-image: url('images/porsche\ bg.png');">
+        <h2>#13 - 2023 Porsche 911 GT3 R, 2017 Porsche #92 Porsche GT Team 911 RSR<br><span id="date">(14.04.2025)</span></h2>
+        <p><a href="images/porsche.png" title="Open in fullscreen" class="fullscreenjson">
+            <i class="fa-solid fa-expand" id="fullscreen"></i>
+            <img src="images/porsche.png" id="imgblur">
+            <img src="images/porsche.png">
+        </a></p>
+        <p id="desc13json">If you're looking for a deeper meaning here... I regret to inform you that there's none. I just thought these backgrounds look cool 😎.</p>
+        <p style="text-align: right;"><img src="images/fh5.png" style="height: 50px;"></p>
+    </div>
 </body>
 </html>
