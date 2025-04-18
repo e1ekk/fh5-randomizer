@@ -172,7 +172,16 @@ a:hover{
 }
 #more:hover{font-weight: bold;}
 
-#morelist{text-align: right;}
+#morelist{
+    text-align: right;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#morelist.open{
+    height: 20px;
+    opacity: 1;
+}
 
 @font-face{
     font-family: Bahnschrift;
