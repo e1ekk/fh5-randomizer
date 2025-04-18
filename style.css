@@ -165,7 +165,6 @@ a:hover{
 }
 
 #more{
-    text-align: right;
     cursor: pointer;
     color: white;
     user-select: none;
@@ -177,10 +176,12 @@ a:hover{
     height: 0;
     opacity: 0;
     transition: 0.5s ease-in-out;
+    pointer-events: none;
 }
 #morelist.open{
     height: 20px;
     opacity: 1;
+    pointer-events: all;
 }
 
 @font-face{
