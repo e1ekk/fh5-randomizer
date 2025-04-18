@@ -315,16 +315,19 @@ function deselectall(){
 
 var moreopen = Boolean(false);
 function more(){
-    var morelist = document.getElementById("morelist");
+    var menu = document.getElementById("menu");
     var moreicon = document.getElementById("moreicon");
+    var menuclose = document.getElementById("menuclose");
     if(moreopen == false){
-        morelist.classList.add("open");
+        menu.classList.add("open");
+        menuclose.classList.add("open");
         moreopen = true;
         moreicon.classList.remove("fa-chevron-down");
         moreicon.classList.add("fa-chevron-up");
     }
     else{
-        morelist.classList.remove("open");
+        menu.classList.remove("open");
+        menuclose.classList.remove("open");
         moreopen = false;
         moreicon.classList.remove("fa-chevron-up");
         moreicon.classList.add("fa-chevron-down");

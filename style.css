@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5{
 }
 
 label, button{
-    background-color: #1c242c;
+    background-color: #0b2427;
     border-radius: 8px;
     border-width: 0;
     color: white;
@@ -171,17 +171,49 @@ a:hover{
 }
 #more:hover{font-weight: bold;}
 
-#morelist{
-    text-align: right;
+#menu{
     height: 0;
     opacity: 0;
     transition: 0.5s ease-in-out;
     pointer-events: none;
+    background-color: #0b2427;
+    border-radius: 5px;
+    padding: 20px;
+    display: block;
+    float: right;
+    box-shadow: 0px 0px 20px 0px #000f11;
+    overflow: hidden;
 }
-#morelist.open{
-    height: 20px;
+#menu.open{
+    height: 58px;
     opacity: 1;
     pointer-events: all;
+}
+
+#moreicon{
+    color: white;
+    font-size: 250%;
+    text-shadow: 0 0 5px black;
+}
+
+#menuframe{
+    position: fixed;
+    right: 13%;
+    top: 3%;
+    z-index: 2;
+}
+
+#menuclose{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+#menuclose.open{
+    display: block;
 }
 
 @font-face{
@@ -202,4 +234,9 @@ a:hover{
     }
 
     #image, #image2, #imagediv{height: 200px;}
+    
+    #menuframe{ 
+        right: 4%;
+        top: 1%;
+    }
 }
