@@ -150,19 +150,19 @@ input[type="checkbox"]{
     cursor: pointer;
     user-select: none;
     color: white;
+    transition: text-shadow 0.3s;
 }
 
-#deselectall:hover{font-weight: bold;}
+#deselectall:hover{text-shadow: 0 0 10px white;}
 
 a{
     background: linear-gradient(90deg, #ff5e33, #ff3086);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     text-decoration: none;
+    transition: text-shadow 0.3s;
 }
-a:hover{
-    font-weight: bold;
-}
+a:hover{text-shadow: 0 0 10px #ff3086;}
 
 #more{
     cursor: pointer;
@@ -194,7 +194,19 @@ a:hover{
 #moreicon{
     color: white;
     font-size: 250%;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 10px black;
+    transition: text-shadow 0.3s;
+}
+#moreicon:hover{text-shadow: 0 0 10px white;}
+#moreicon.open{animation: arropen 0.5s ease-in-out forwards;}
+@keyframes arropen{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(180deg);}
+}
+#moreicon.closed{animation: arrclose 0.5s ease-in-out forwards;}
+@keyframes arrclose{
+    from{transform: rotate(180deg);}
+    to{transform: rotate(0deg);}
 }
 
 #menuframe{
