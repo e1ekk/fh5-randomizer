@@ -245,6 +245,8 @@ a:hover{text-shadow: 0 0 0.5em #ff3086;}
     -webkit-background-clip: text;
     padding-top: 2em;
     padding-bottom: 2em;
+    display: inline-block;
+    margin: 0;
 }
 
 @media only screen and (max-device-width: 600px){
