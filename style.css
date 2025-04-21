@@ -30,22 +30,18 @@ h1, h2, h3, h4, h5{
 
 label, button{
     background-color: #0b2427;
-    border-radius: 8px;
+    border-radius: 0.5em;
     border-width: 0;
     color: white;
-    font-size: 17px;
-    line-height: 20px;
-    padding: 10px 12px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    padding: 0.65em;
     transition: background-color 0.3s;
 }
 
 #run{
-    font-size: 25px;
-    padding: 20px;
+    font-size: x-large;
+    padding: 0.8em;
     background: linear-gradient(90deg, #ff5e33, #ff3086);
-    box-shadow: 0px 0px 20px 0px #000f11;
+    box-shadow: 0 0 1em 0 #000f11;
 }
 
 input[type="checkbox"], label, button{
@@ -64,41 +60,41 @@ label:has(#horizonRaptors):hover{background-color: #46302b;}
 label:has(#gritReapers):hover{background-color: #2d2445;}
 
 label{
-    line-height: 40px;
-    margin-right: 5px;
-    box-shadow: 0px 0px 20px 0px #000f11;
+    line-height: 2.5em;
+    margin-right: 0.3em;
+    box-shadow: 0 0 1em 0 #000f11;
 }
 
 label:has(#roadRaces:checked), label:has(#speedRaces:checked), label:has(#apexPredators:checked){
-    outline: 3px solid #0090d6;
+    outline: 0.15em solid #0090d6;
     background-color: #1b3144;
 }
 label:has(#streetRaces:checked){
-    outline: 3px solid #b62daf;
+    outline: 0.15em solid #b62daf;
     background-color: #34243c;
 }
 label:has(#dirtRaces:checked), label:has(#hazardRaces:checked){
-    outline: 3px solid #ff7111;
+    outline: 0.15em solid #ff7111;
     background-color: #462c2b;
 }
 label:has(#crossCountryRaces:checked){
-    outline: 3px solid #1ca452;
+    outline: 0.15em solid #1ca452;
     background-color: #1c352f;
 }
 label:has(#dragRaces:checked){
-    outline: 3px solid #df386e;
+    outline: 0.15em solid #df386e;
     background-color: #3e2532;
 }
 label:has(#midnightBattles:checked){
-    outline: 3px solid #501e54;
+    outline: 0.15em solid #501e54;
     background-color: #21242f;
 }
 label:has(#horizonRaptors:checked){
-    outline: 3px solid #ff8b00;
+    outline: 0.15em solid #ff8b00;
     background-color: #46302b;
 }
 label:has(#gritReapers:checked){
-    outline: 3px solid #9526dd;
+    outline: 0.15em solid #9526dd;
     background-color: #2d2445;
 }
 
@@ -111,14 +107,14 @@ input[type="checkbox"]{
     display: block;
     float: left;
     width: 64%;
-    height: 300px;
+    height: 19em;
     position: relative;
 }
 
 #image, #image2{
     background-color: #29343f;
-    border-radius: 30px;
-    height: 300px;
+    border-radius: 2em;
+    height: 19em;
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -130,8 +126,8 @@ input[type="checkbox"]{
 
 #image{
     background-color: rgba(0,0,0,0);
-    backdrop-filter: blur(30px);
-    box-shadow: 0px 0px 30px 0px #000f11;
+    backdrop-filter: blur(2em);
+    box-shadow: 0 0 1.5em 0 #000f11;
 }
 
 #details{
@@ -163,7 +159,7 @@ input[type="checkbox"]{
     transition: text-shadow 0.3s;
 }
 
-#deselectall:hover{text-shadow: 0 0 10px white;}
+#deselectall:hover{text-shadow: 0 0 0.5em white;}
 
 a{
     background: linear-gradient(90deg, #ff5e33, #ff3086);
@@ -172,7 +168,7 @@ a{
     text-decoration: none;
     transition: text-shadow 0.3s;
 }
-a:hover{text-shadow: 0 0 10px #ff3086;}
+a:hover{text-shadow: 0 0 0.5em #ff3086;}
 
 #more{
     cursor: pointer;
@@ -188,15 +184,15 @@ a:hover{text-shadow: 0 0 10px #ff3086;}
     transition: 0.5s ease-in-out;
     pointer-events: none;
     background-color: #0b2427;
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: 0.5em;
+    padding: 1.25em;
     display: block;
     float: right;
-    box-shadow: 0px 0px 20px 0px #000f11;
+    box-shadow: 0 0 1em 0 #000f11;
     overflow: hidden;
 }
 #menu.open{
-    height: 58px;
+    height: 3.5em;
     opacity: 1;
     pointer-events: all;
 }
@@ -204,10 +200,10 @@ a:hover{text-shadow: 0 0 10px #ff3086;}
 #moreicon{
     color: white;
     font-size: 250%;
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 0.25em black;
     transition: text-shadow 0.3s;
 }
-#moreicon:hover{text-shadow: 0 0 10px white;}
+#moreicon:hover{text-shadow: 0 0 0.25em white;}
 #moreicon.open{animation: arropen 0.5s ease-in-out forwards;}
 @keyframes arropen{
     from{transform: rotateX(0deg);}
@@ -246,8 +242,8 @@ a:hover{text-shadow: 0 0 10px #ff3086;}
     background: linear-gradient(90deg, #ff5e33, #ff3086);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 @media only screen and (max-device-width: 600px){
@@ -262,7 +258,7 @@ a:hover{text-shadow: 0 0 10px #ff3086;}
         text-align: center;
     }
 
-    #image, #image2, #imagediv{height: 200px;}
+    #image, #image2, #imagediv{height: 12em;}
     
     #menuframe{ 
         right: 4%;
