@@ -5,6 +5,15 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+@font-face{
+    font-family: Bahnschrift;
+    src: url('Fonts/Bahnschrift.ttf');
+}
+@font-face{
+    font-family: Samsung;
+    src: url('Fonts/samsungsharpsans-medium.otf');
+}
+
 body{
     background-color: #001b1e;
     margin-top: 3%;
@@ -231,9 +240,14 @@ a:hover{text-shadow: 0 0 10px #ff3086;}
     display: block;
 }
 
-@font-face{
-    font-family: Bahnschrift;
-    src: url('Fonts/Bahnschrift.ttf');
+#title{
+    text-align: center;
+    font-family: Samsung;
+    background: linear-gradient(90deg, #ff5e33, #ff3086);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 @media only screen and (max-device-width: 600px){
