@@ -193,7 +193,7 @@ a:hover{text-shadow: 0 0 0.5em #ff3086;}
     backdrop-filter: blur(0.5em);
 }
 #menu.open{
-    height: 3.5em;
+    height: 8.5em;
     opacity: 1;
     pointer-events: all;
 }
