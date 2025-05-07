@@ -2,7 +2,7 @@ function run(){
     // Names of all tracks
     var tracks = [
         // Road Races
-        "Bahía De Plano Circuit", "Dunas Blancas Sprint", "Emerald Circuit", "Descansar Dorado Sprint", "Volcán Sprint", "Horizon Mexico Circuit", "Reservorio Sprint", "Arch of Mulegé Circuit", "Sierra Verde Sprint", "Copper Canyon Sprint", "Llanuras Sprint", "Gran Pantano Sprint", "The Colossus", "The Goliath", "Playa Azul Circuit", "Los Jardines Circuit", "Riviera Sprint", "Chihuahua Circuit", "Tierra Próspera Circuit", "Estadio Circuit", "Lookout Circuit", "Bola Ocho Circuit", "Cathedral Circuit", "Panorámica Sprint", "Plaza Circuit", "Horizon Oval Circuit", "Vista Del Mar Sprint", "Marigold Sprint", "Aeródromo Sprint", "Línea Costera Sprint", "Winter Wonderland Circuit", "Cloverleaf Sprint", "San Juan Sprint", "Valle Del Río Sprint", "Rocosa Sprint",
+        "Bahía De Plano Circuit", "Dunas Blancas Sprint", "Emerald Circuit", "Descansar Dorado Sprint", "Volcán Sprint", "Horizon Mexico Circuit", "Reservorio Sprint", "Arch of Mulegé Circuit", "Sierra Verde Sprint", "Copper Canyon Sprint", "Llanuras Sprint", "Gran Pantano Sprint", "The Colossus", "The Goliath", "Playa Azul Circuit", "Los Jardines Circuit", "Riviera Sprint", "Chihuahua Circuit", "Tierra Próspera Circuit", "Estadio Circuit", "Lookout Circuit", "Bola Ocho Circuit", "Cathedral Circuit", "Panorámica Sprint", "Plaza Circuit", "Horizon Oval Circuit", "Vista Del Mar Sprint", "Marigold Sprint", "Aeródromo Sprint", "Línea Costera Sprint", "Winter Wonderland Circuit", "Cloverleaf Sprint", "San Juan Sprint", "Valle Del Río Sprint", "Rocosa Sprint", "Horizon Stadium Circuit",
 
         // Street Races
         "El Lago Blanco", "Ruta Norte", "Castillo Del Mar", "Costa Rocosa", "Festival Gatecrash", "Las Afueras", "Hilltop Descent", "Tunnel Run", "Cañón Run", "Guanajuato Sur", "Horizon Callejera", "Cruce Del Valle", "Las Laderas", "The Marathon", "Coast Run", "Highland Climb", "Carretera Chase", "Bosque Del Sur", "Jungle Descent", "Granjas De Tapalpa", "Wetland Charge",
@@ -38,7 +38,7 @@ function run(){
     // Track preview links
     var images = [
         // Road Races
-        "url(Track\\ Previews/bahiadeplanocircuit.webp)", "url(Track\\ Previews/dunasblancassprint.webp)", "url(Track\\ Previews/emeraldcircuit.webp)", "url(Track\\ Previews/descansardoradosprint.webp)", "url(Track\\ Previews/volcansprint.webp)", "url(Track\\ Previews/horizonmexicocircuit.webp)", "url(Track\\ Previews/reservoriosprint.webp)", "url(Track\\ Previews/archofmulegecircuit.webp)", "url(Track\\ Previews/sierraverdesprint.webp)", "url(Track\\ Previews/coppercanyonsprint.webp)", "url(Track\\ Previews/llanurassprint.webp)", "url(Track\\ Previews/granpantanosprint.webp)", "url(Track\\ Previews/thecolossus.webp)", "url(Track\\ Previews/thegoliath.webp)", "url(Track\\ Previews/playaazulcircuit.webp)", "url(Track\\ Previews/losjardinescircuit.webp)", "url(Track\\ Previews/rivierasprint.webp)", "url(Track\\ Previews/chihuahuacircuit.webp)", "url(Track\\ Previews/tierraprosperacircuit.webp)", "url(Track\\ Previews/estadiocircuit.webp)", "url(Track\\ Previews/lookoutcircuit.webp)", "url(Track\\ Previews/bolaochocircuit.webp)", "url(Track\\ Previews/cathedralcircuit.webp)", "url(Track\\ Previews/panoramicasprint.webp)", "url(Track\\ Previews/plazacircuit.webp)", "url(Track\\ Previews/horizonovalcircuit.webp)", "url(Track\\ Previews/vistadelmarsprint.webp)", "url(Track\\ Previews/marigoldsprint.webp)", "url(Track\\ Previews/aerodromosprint.webp)", "url(Track\\ Previews/lineacosterasprint.webp)", "url(Track\\ Previews/winterwonderlandcircuit.webp)", "url(Track\\ Previews/cloverleafsprint.webp)", "url(Track\\ Previews/sanjuansprint.webp)", "url(Track\\ Previews/valledelriosprint.webp)", "url(Track\\ Previews/rocosasprint.webp)",
+        "url(Track\\ Previews/bahiadeplanocircuit.webp)", "url(Track\\ Previews/dunasblancassprint.webp)", "url(Track\\ Previews/emeraldcircuit.webp)", "url(Track\\ Previews/descansardoradosprint.webp)", "url(Track\\ Previews/volcansprint.webp)", "url(Track\\ Previews/horizonmexicocircuit.webp)", "url(Track\\ Previews/reservoriosprint.webp)", "url(Track\\ Previews/archofmulegecircuit.webp)", "url(Track\\ Previews/sierraverdesprint.webp)", "url(Track\\ Previews/coppercanyonsprint.webp)", "url(Track\\ Previews/llanurassprint.webp)", "url(Track\\ Previews/granpantanosprint.webp)", "url(Track\\ Previews/thecolossus.webp)", "url(Track\\ Previews/thegoliath.webp)", "url(Track\\ Previews/playaazulcircuit.webp)", "url(Track\\ Previews/losjardinescircuit.webp)", "url(Track\\ Previews/rivierasprint.webp)", "url(Track\\ Previews/chihuahuacircuit.webp)", "url(Track\\ Previews/tierraprosperacircuit.webp)", "url(Track\\ Previews/estadiocircuit.webp)", "url(Track\\ Previews/lookoutcircuit.webp)", "url(Track\\ Previews/bolaochocircuit.webp)", "url(Track\\ Previews/cathedralcircuit.webp)", "url(Track\\ Previews/panoramicasprint.webp)", "url(Track\\ Previews/plazacircuit.webp)", "url(Track\\ Previews/horizonovalcircuit.webp)", "url(Track\\ Previews/vistadelmarsprint.webp)", "url(Track\\ Previews/marigoldsprint.webp)", "url(Track\\ Previews/aerodromosprint.webp)", "url(Track\\ Previews/lineacosterasprint.webp)", "url(Track\\ Previews/winterwonderlandcircuit.webp)", "url(Track\\ Previews/cloverleafsprint.webp)", "url(Track\\ Previews/sanjuansprint.webp)", "url(Track\\ Previews/valledelriosprint.webp)", "url(Track\\ Previews/rocosasprint.webp)", "url(Track\\ Previews/horizonstadiumcircuit.webp)",
 
         // Street Races
         "url(Track\\ Previews/ellagoblanco.webp)", "url(Track\\ Previews/rutanorte.webp)", "url(Track\\ Previews/castillodelmar.webp)", "url(Track\\ Previews/costarocosa.webp)", "url(Track\\ Previews/festivalgatecrash.webp)", "url(Track\\ Previews/lasafueras.webp)", "url(Track\\ Previews/hilltopdescent.webp)", "url(Track\\ Previews/tunnelrun.webp)", "url(Track\\ Previews/canonrun.webp)", "url(Track\\ Previews/guanajuatosur.webp)", "url(Track\\ Previews/horizoncallejera.webp)", "url(Track\\ Previews/crucedelvalle.webp)", "url(Track\\ Previews/lasladeras.webp)", "url(Track\\ Previews/themarathon.webp)", "url(Track\\ Previews/coastrun.webp)", "url(Track\\ Previews/highlandclimb.webp)", "url(Track\\ Previews/carreterachase.webp)", "url(Track\\ Previews/bosquedelsur.webp)", "url(Track\\ Previews/jungledescent.webp)", "url(Track\\ Previews/granjasdetapalpa.webp)", "url(Track\\ Previews/wetlandcharge.webp)",
@@ -85,30 +85,30 @@ function run(){
     var gritReapersChecked = document.getElementById("gritReapers").checked;
 
     // Track name ranges in the array
-    var roadRaces = tracks.slice(0, 35);
-    var streetRaces = tracks.slice(35, 56);
-    var dirtRaces = tracks.slice(56, 76);
-    var crossCountryRaces = tracks.slice(76, 96);
-    var dragRaces = tracks.slice(96, 99);
-    var midnightBattles = tracks.slice(99, 103);
-    var speedRaces = tracks.slice(103, 113);
-    var hazardRaces = tracks.slice(113, 121);
-    var apexPredators = tracks.slice(121, 130);
-    var horizonRaptors = tracks.slice(130, 140);
-    var gritReapers = tracks.slice(140, 149);
+    var roadRaces = tracks.slice(0, 36);
+    var streetRaces = tracks.slice(36, 57);
+    var dirtRaces = tracks.slice(57, 77);
+    var crossCountryRaces = tracks.slice(77, 97);
+    var dragRaces = tracks.slice(97, 100);
+    var midnightBattles = tracks.slice(100, 104);
+    var speedRaces = tracks.slice(104, 114);
+    var hazardRaces = tracks.slice(114, 122);
+    var apexPredators = tracks.slice(122, 131);
+    var horizonRaptors = tracks.slice(131, 141);
+    var gritReapers = tracks.slice(141, 150);
 
     // Track image link ranges in the array
-    var roadRacesImages = images.slice(0, 35);
-    var streetRacesImages = images.slice(35, 56);
-    var dirtRacesImages = images.slice(56, 76);
-    var crossCountryRacesImages = images.slice(76, 96);
-    var dragRacesImages = images.slice(96, 99);
-    var midnightBattlesImages = images.slice(99, 103);
-    var speedRacesImages = images.slice(103, 113);
-    var hazardRacesImages = images.slice(113, 121);
-    var apexPredatorsImages = images.slice(121, 130);
-    var horizonRaptorsImages = images.slice(130, 140);
-    var gritReapersImages = images.slice(140, 149);
+    var roadRacesImages = images.slice(0, 36);
+    var streetRacesImages = images.slice(36, 57);
+    var dirtRacesImages = images.slice(57, 77);
+    var crossCountryRacesImages = images.slice(77, 97);
+    var dragRacesImages = images.slice(97, 100);
+    var midnightBattlesImages = images.slice(100, 104);
+    var speedRacesImages = images.slice(104, 114);
+    var hazardRacesImages = images.slice(114, 122);
+    var apexPredatorsImages = images.slice(122, 131);
+    var horizonRaptorsImages = images.slice(131, 141);
+    var gritReapersImages = images.slice(141, 150);
 
     // Arrays that store tracks from the selected track types
     var availableTracks = [];
